@@ -223,7 +223,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../images/hero-pattern.png');
+    background-image: url('https://images.unsplash.com/photo-1535435630451-2f4e0dbe7051?q=80&w=600&auto=format&fit=crop');
     opacity: 0.1;
     z-index: 0;
 }
