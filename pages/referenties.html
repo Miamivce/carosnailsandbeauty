@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referenties | Caro's Nails and Beauty</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .testimonial-card {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+        
+        .testimonial-info h3 {
+            margin: 0 0 0.25rem;
+            font-size: 1.2rem;
+        }
+        
+        .testimonial-info .date {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-rating {
+            display: flex;
+            margin: 0.5rem 0;
+            color: var(--accent-color);
+        }
+        
+        .testimonial-rating i {
+            margin-right: 0.25rem;
+        }
+        
+        .testimonial-content {
+            margin-bottom: 1rem;
+            position: relative;
+            font-style: italic;
+        }
+        
+        .testimonial-content::before {
+            content: '\201C';
+            font-size: 3rem;
+            position: absolute;
+            left: -1.5rem;
+            top: -1.5rem;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+        
+        .treatment-tag {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #333;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .testimonial-filter {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            gap: 0.5rem;
+        }
+        
+        .filter-btn {
+            background-color: #fff;
+            border: 1px solid var(--primary-color);
+            color: var(--dark-color);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .filter-btn:hover, 
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: var(--dark-color);
+        }
+        
+        .testimonial-response {
+            background-color: var(--gray-color);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
+            position: relative;
+        }
+        
+        .testimonial-response::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid var(--gray-color);
+        }
+        
+        .testimonial-response p {
+            margin: 0 0 0.5rem;
+        }
+        
+        .response-author {
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .testimonial-filter {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Caro's Nails and Beauty</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="over-caro.html">Over Caro</a></li>
+                    <li class="dropdown">
+                        <a href="aanbod.html">Aanbod <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="gelaat-lichaam.html">Gelaat & Lichaam</a></li>
+                            <li><a href="laserontharing.html">Definitieve Laserontharing</a></li>
+                            <li><a href="nagels.html">Nagels</a></li>
+                            <li><a href="make-up.html">Make Up</a></li>
+                            <li><a href="bruidspaketten.html">Bruidspaketten</a></li>
+                            <li><a href="adipologie.html">Body Contouring: Adipologie</a></li>
+                            <li><a href="spraytan.html">Spraytan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="promoties.html">Promoties</a></li>
+                    <li><a href="info-behandelingen.html">Info Behandelingen</a></li>
+                    <li><a href="referenties.html" class="active">Referenties</a></li>
+                    <li><a href="covid-19.html">COVID-19</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Referenties</h1>
+            </div>
+        </section>
+
+        <section class="service-detail">
+            <div class="container">
+                <div class="service-intro">
+                    <h2>Ervaringen van onze klanten</h2>
+                    <p>Bij Caro's Nails and Beauty streven wij naar perfectie en klanttevredenheid. We zijn trots op de positieve feedback die we van onze klanten ontvangen en delen graag hun ervaringen met u.</p>
+                    <p>Lees hieronder wat onze klanten over ons zeggen, en overtuig uzelf van onze kwaliteit en service.</p>
+                </div>
+
+                <div class="service-options">
+                    <h2>Filter op behandeling</h2>
+                    <div class="testimonial-filter">
+                        <button class="filter-btn active">Alle</button>
+                        <button class="filter-btn">Nagels</button>
+                        <button class="filter-btn">Gelaatsbehandelingen</button>
+                        <button class="filter-btn">Massages</button>
+                        <button class="filter-btn">Laserontharing</button>
+                        <button class="filter-btn">Make-up</button>
+                        <button class="filter-btn">Bruidspakketten</button>
+                        <button class="filter-btn">Adipologie</button>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="../images/testimonial-1.jpg" alt="Klantfoto" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h3>Lisa Verhaegen</h3>
+                            <div class="date">15 mei 2023</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Al jaren kom ik bij Caro voor mijn nagels en ik ben nog nooit teleurgesteld geweest. Ze is een ware kunstenaar en luistert altijd goed naar wat ik wil. Haar salon is altijd netjes en ze neemt de tijd voor je. Als je op zoek bent naar kwaliteit en persoonlijke aandacht, is dit de plek om te zijn!</p>
+                    </div>
+                    <div>
+                        <span class="treatment-tag">Nagels</span>
+                        <span class="treatment-tag">Gellak</span>
+                    </div>
+                    <div class="testimonial-response">
+                        <p>Dank je wel voor je lieve woorden, Lisa! Het is altijd een plezier om je in de salon te ontvangen. Tot de volgende keer!</p>
+                        <p class="response-author">- Caro</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="../images/testimonial-2.jpg" alt="Klantfoto" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h3>Eva Martens</h3>
+                            <div class="date">3 juni 2023</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Voor mijn bruiloft heb ik het complete bruidspakket geboekt en ik kan niet genoeg benadrukken hoe blij ik was met het resultaat! Caro heeft me zo goed verzorgd in de weken voorafgaand aan de grote dag. De make-up was perfect en bleef de hele dag zitten, zelfs tijdens het dansen. Ook mijn nagels en gezichtsbehandeling waren top. Een grote aanrader voor alle toekomstige bruiden!</p>
+                    </div>
+                    <div>
+                        <span class="treatment-tag">Bruidspakket</span>
+                        <span class="treatment-tag">Make-up</span>
+                        <span class="treatment-tag">Nagels</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="../images/testimonial-3.jpg" alt="Klantfoto" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h3>Tom Claessens</h3>
+                            <div class="date">22 april 2023</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Als man was ik eerst wat terughoudend om naar een beautysalon te gaan, maar Caro heeft me direct op mijn gemak gesteld. Ik heb een reeks laserontharing behandelingen gedaan voor mijn rug en ben super tevreden met het resultaat. Professionele aanpak, duidelijke uitleg en een aangename omgeving. Bedankt voor de goede zorgen!</p>
+                    </div>
+                    <div>
+                        <span class="treatment-tag">Laserontharing</span>
+                    </div>
+                    <div class="testimonial-response">
+                        <p>Dank je wel voor het vertrouwen, Tom! Geweldig om te horen dat je tevreden bent met de resultaten. Je bent altijd welkom!</p>
+                        <p class="response-author">- Caro</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="../images/testimonial-4.jpg" alt="Klantfoto" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h3>Sophie Van Damme</h3>
+                            <div class="date">17 mei 2023</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Ik ben onder behandeling voor kanker en was erg onzeker over mijn uiterlijk tijdens deze moeilijke periode. Caro heeft me met zoveel warmte en deskundigheid behandeld tijdens een gespecialiseerde gelaatsbehandeling. Haar kennis over huidverzorging voor kankerpatiënten is indrukwekkend en ze wist precies wat mijn huid nodig had. Ik ging naar buiten met een stralende huid en een boost voor mijn zelfvertrouwen. Ontzettend bedankt!</p>
+                    </div>
+                    <div>
+                        <span class="treatment-tag">Gelaatsbehandeling</span>
+                        <span class="treatment-tag">Oncologische zorg</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="../images/testimonial-5.jpg" alt="Klantfoto" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h3>Liesbeth Wouters</h3>
+                            <div class="date">2 juni 2023</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Ik ben begonnen met een reeks adipologie behandelingen en wat een verschil! Na 5 sessies zie ik al een zichtbare verbetering in mijn probleemzones. Caro is zeer professioneel en legt alles goed uit. Ze geeft ook eerlijke feedback over wat haalbaar is. Geen valse beloftes, maar echte resultaten. De salon is modern en zeer hygiënisch. Een aanrader!</p>
+                    </div>
+                    <div>
+                        <span class="treatment-tag">Adipologie</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="../images/testimonial-6.jpg" alt="Klantfoto" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h3>Sarah De Vos</h3>
+                            <div class="date">12 mei 2023</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>De Hot Stone massage bij Caro's was precies wat ik nodig had na een stressvolle werkweek. De salon heeft een zeer rustgevende sfeer en de massage was perfect - niet te hard en niet te zacht. Caro voelde intuïtief aan welke plekken extra aandacht nodig hadden. Mijn enige feedback is dat de behandeling wat aan de korte kant was, ik had graag wat langer willen blijven! Maar verder top, ik kom zeker terug.</p>
+                    </div>
+                    <div>
+                        <span class="treatment-tag">Massage</span>
+                    </div>
+                    <div class="testimonial-response">
+                        <p>Bedankt voor je feedback, Sarah! Fijn om te horen dat je de massage als ontspannend hebt ervaren. Voor je volgende afspraak kunnen we zeker een langere massage inplannen. We bieden ook 90 minuten sessies aan. Tot snel!</p>
+                        <p class="response-author">- Caro</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="../images/testimonial-7.jpg" alt="Klantfoto" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h3>Kathleen Janssens</h3>
+                            <div class="date">29 mei 2023</div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>De anti-aging gelaatsbehandeling bij Caro was een openbaring! Ze gebruikt hoogwaardige producten die je echt kan voelen werken, en het resultaat was direct zichtbaar. Mijn huid voelde zo zacht en zag er stralend uit. Caro heeft ook veel kennis en gaf me waardevolle tips voor mijn dagelijkse huidverzorging. De persoonlijke aandacht maakt het verschil. Ik heb al mijn volgende afspraak gepland!</p>
+                    </div>
+                    <div>
+                        <span class="treatment-tag">Gelaatsbehandeling</span>
+                        <span class="treatment-tag">Anti-aging</span>
+                    </div>
+                </div>
+                
+                <div class="service-cta">
+                    <h2>Deel uw ervaring</h2>
+                    <p>Bent u recent bij Caro's Nails and Beauty geweest? Wij waarderen het enorm als u uw ervaring met ons wilt delen!</p>
+                    <div class="cta-buttons">
+                        <a href="https://g.page/r/CYour-google-review-link/review" target="_blank" class="btn">Google Review Schrijven</a>
+                        <a href="contact.html" class="btn">Feedback Sturen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Caro's Nails and Beauty</h3>
+                    <address>
+                        Mishagen 132<br>
+                        2930 Brasschaat<br>
+                        België
+                    </address>
+                    <p>GSM: <a href="tel:+32475984574">+32 475 98 45 74</a></p>
+                    <p>E-mail: <a href="mailto:info@carosbeauty.be">info@carosbeauty.be</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Openingsuren</h3>
+                    <ul>
+                        <li>Maandag: Op afspraak</li>
+                        <li>Dinsdag: 9:00 - 18:00</li>
+                        <li>Woensdag: 9:00 - 18:00</li>
+                        <li>Donderdag: 9:00 - 20:00</li>
+                        <li>Vrijdag: 9:00 - 18:00</li>
+                        <li>Zaterdag: 9:00 - 15:00</li>
+                        <li>Zondag: Gesloten</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Volg Ons</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="https://booking.optios.net/13127/activities" class="btn booking-btn">Online Boeken</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Caro's Nails and Beauty - Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.textContent.trim();
+                    
+                    // Show all testimonials if "Alle" is selected
+                    if (filter === 'Alle') {
+                        testimonialCards.forEach(card => {
+                            card.style.display = 'block';
+                        });
+                        return;
+                    }
+                    
+                    // Filter testimonials based on selected treatment
+                    testimonialCards.forEach(card => {
+                        const tags = card.querySelectorAll('.treatment-tag');
+                        let shouldShow = false;
+                        
+                        tags.forEach(tag => {
+                            if (tag.textContent === filter) {
+                                shouldShow = true;
+                            }
+                        });
+                        
+                        if (shouldShow) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

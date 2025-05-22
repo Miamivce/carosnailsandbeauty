@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoties | Caro's Nails and Beauty</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .promo-card {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .promo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .promo-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-bottom-left-radius: var(--border-radius);
+            z-index: 1;
+        }
+        
+        .promo-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .promo-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .promo-card:hover .promo-image img {
+            transform: scale(1.05);
+        }
+        
+        .promo-content {
+            padding: 1.5rem;
+        }
+        
+        .promo-title {
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+        
+        .promo-description {
+            margin-bottom: 1rem;
+        }
+        
+        .promo-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .promo-price {
+            display: flex;
+            align-items: center;
+        }
+        
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 0.5rem;
+        }
+        
+        .new-price {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+        
+        .promo-validity {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .promo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .promo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Caro's Nails and Beauty</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="over-caro.html">Over Caro</a></li>
+                    <li class="dropdown">
+                        <a href="aanbod.html">Aanbod <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="gelaat-lichaam.html">Gelaat & Lichaam</a></li>
+                            <li><a href="laserontharing.html">Definitieve Laserontharing</a></li>
+                            <li><a href="nagels.html">Nagels</a></li>
+                            <li><a href="make-up.html">Make Up</a></li>
+                            <li><a href="bruidspaketten.html">Bruidspaketten</a></li>
+                            <li><a href="adipologie.html">Body Contouring: Adipologie</a></li>
+                            <li><a href="spraytan.html">Spraytan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="promoties.html" class="active">Promoties</a></li>
+                    <li><a href="info-behandelingen.html">Info Behandelingen</a></li>
+                    <li><a href="referenties.html">Referenties</a></li>
+                    <li><a href="covid-19.html">COVID-19</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Promoties</h1>
+            </div>
+        </section>
+
+        <section class="service-detail">
+            <div class="container">
+                <div class="service-intro">
+                    <h2>Onze actuele aanbiedingen</h2>
+                    <p>Bij Caro's Nails and Beauty streven wij ernaar om u altijd de beste behandelingen aan te bieden tegen eerlijke prijzen. Bekijk hier onze actuele promoties en seizoensgebonden aanbiedingen om nog meer te genieten van onze diensten.</p>
+                    <p>Onze promoties worden regelmatig vernieuwd, dus houd deze pagina en onze sociale media in de gaten voor de nieuwste aanbiedingen!</p>
+                </div>
+
+                <div class="service-options">
+                    <h2>Speciale Actie: Zomerse Verwennerij</h2>
+                    <div class="option-content">
+                        <p>Maak u klaar voor de zomer met onze speciale samengestelde behandelingen om u te laten stralen in de mooie dagen die komen!</p>
+                    </div>
+                </div>
+                
+                <div class="promo-grid">
+                    <div class="promo-card">
+                        <div class="promo-badge">20% KORTING</div>
+                        <div class="promo-image">
+                            <img src="../images/promo-facial.jpg" alt="Gezichtsbehandeling promotie">
+                        </div>
+                        <div class="promo-content">
+                            <h3 class="promo-title">Zomer Facial & Gellak Combi</h3>
+                            <p class="promo-description">Geniet van een verfrissende zomer gezichtsbehandeling in combinatie met een gellak manicure. De perfecte combinatie om er stralend uit te zien!</p>
+                            <div class="promo-details">
+                                <div class="promo-price">
+                                    <span class="old-price">€95</span>
+                                    <span class="new-price">€76</span>
+                                </div>
+                                <div class="promo-validity">Geldig t/m 31 augustus</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card">
+                        <div class="promo-badge">NIEUW</div>
+                        <div class="promo-image">
+                            <img src="../images/promo-laser.jpg" alt="Laserontharing promotie">
+                        </div>
+                        <div class="promo-content">
+                            <h3 class="promo-title">Startpakket Definitieve Ontharing</h3>
+                            <p class="promo-description">Probeer nu definitieve laserontharing met ons voordelige startpakket! Inclusief 3 behandelingen voor oksels of bikinilijn.</p>
+                            <div class="promo-details">
+                                <div class="promo-price">
+                                    <span class="old-price">€225</span>
+                                    <span class="new-price">€175</span>
+                                </div>
+                                <div class="promo-validity">Geldig t/m 31 juli</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card">
+                        <div class="promo-badge">15% KORTING</div>
+                        <div class="promo-image">
+                            <img src="../images/promo-package.jpg" alt="Vriendinnen pakket">
+                        </div>
+                        <div class="promo-content">
+                            <h3 class="promo-title">Vriendinnen Verwen Pakket</h3>
+                            <p class="promo-description">Kom samen met een vriendin en geniet beiden van een korting op alle behandelingen geboekt op dezelfde dag.</p>
+                            <div class="promo-details">
+                                <div class="promo-price">
+                                    <span class="new-price">15% korting</span>
+                                </div>
+                                <div class="promo-validity">Doorlopende aanbieding</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card">
+                        <div class="promo-badge">NIEUW KLANT</div>
+                        <div class="promo-image">
+                            <img src="../images/promo-first.jpg" alt="Nieuwe klant korting">
+                        </div>
+                        <div class="promo-content">
+                            <h3 class="promo-title">Nieuwe Klant Welkomstkorting</h3>
+                            <p class="promo-description">Speciaal voor nieuwe klanten: 10% korting op uw eerste behandeling naar keuze bij Caro's Nails and Beauty.</p>
+                            <div class="promo-details">
+                                <div class="promo-price">
+                                    <span class="new-price">10% korting</span>
+                                </div>
+                                <div class="promo-validity">Altijd geldig voor nieuwe klanten</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card">
+                        <div class="promo-badge">AANBIEDING</div>
+                        <div class="promo-image">
+                            <img src="../images/promo-sculpt.jpg" alt="Body contouring pakket">
+                        </div>
+                        <div class="promo-content">
+                            <h3 class="promo-title">Summer Body Ready Pakket</h3>
+                            <p class="promo-description">Combinatiepakket van 5 adipologie behandelingen. Ideaal om uw lichaam klaar te maken voor de zomer!</p>
+                            <div class="promo-details">
+                                <div class="promo-price">
+                                    <span class="old-price">€375</span>
+                                    <span class="new-price">€295</span>
+                                </div>
+                                <div class="promo-validity">Geldig t/m 30 juni</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card">
+                        <div class="promo-badge">SPECIALE PRIJS</div>
+                        <div class="promo-image">
+                            <img src="../images/promo-tan.jpg" alt="Spraytan aanbieding">
+                        </div>
+                        <div class="promo-content">
+                            <h3 class="promo-title">3x Spraytan Pakket</h3>
+                            <p class="promo-description">Koop nu een pakket van 3 full body spraytan behandelingen en houd uw bruine teint gedurende de hele zomer!</p>
+                            <div class="promo-details">
+                                <div class="promo-price">
+                                    <span class="old-price">€135</span>
+                                    <span class="new-price">€105</span>
+                                </div>
+                                <div class="promo-validity">Geldig t/m 31 augustus</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-options">
+                    <h2>Voorwaarden</h2>
+                    <div class="option-content">
+                        <ul>
+                            <li>Alle promoties zijn geldig binnen de vermelde periode.</li>
+                            <li>Vooraf reserveren is noodzakelijk; vermeld de gewenste promotie bij het maken van uw reservering.</li>
+                            <li>Promoties zijn niet te combineren met andere acties, kortingen of cadeaubonnen.</li>
+                            <li>Promoties gelden zolang de voorraad strekt.</li>
+                            <li>Prijswijzigingen en typefouten voorbehouden.</li>
+                            <li>Alle promoties zijn persoonsgebonden en niet overdraagbaar.</li>
+                            <li>Voor bepaalde promoties kan een toeslag gelden tijdens drukke periodes of bij specifieke wensen.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-options">
+                    <h2>Cadeaubonnen</h2>
+                    <div class="option-content">
+                        <p>Naast onze promoties bieden wij ook cadeaubonnen aan voor alle behandelingen. Een ideaal geschenk voor een dierbare! Cadeaubonnen zijn verkrijgbaar in elke gewenste waarde en kunnen worden gebruikt voor alle behandelingen en producten bij Caro's Nails and Beauty.</p>
+                        <p>Kom langs in onze salon om een cadeaubon aan te schaffen of neem telefonisch contact met ons op om de mogelijkheden te bespreken.</p>
+                    </div>
+                </div>
+                
+                <div class="service-cta">
+                    <h2>Profiteer nu van onze aanbiedingen</h2>
+                    <p>Maak snel een afspraak om van deze speciale promoties gebruik te maken!</p>
+                    <div class="cta-buttons">
+                        <a href="https://booking.optios.net/13127/activities" class="btn booking-btn">Online Boeken</a>
+                        <a href="contact.html" class="btn">Neem Contact Op</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Caro's Nails and Beauty</h3>
+                    <address>
+                        Mishagen 132<br>
+                        2930 Brasschaat<br>
+                        België
+                    </address>
+                    <p>GSM: <a href="tel:+32475984574">+32 475 98 45 74</a></p>
+                    <p>E-mail: <a href="mailto:info@carosbeauty.be">info@carosbeauty.be</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Openingsuren</h3>
+                    <ul>
+                        <li>Maandag: Op afspraak</li>
+                        <li>Dinsdag: 9:00 - 18:00</li>
+                        <li>Woensdag: 9:00 - 18:00</li>
+                        <li>Donderdag: 9:00 - 20:00</li>
+                        <li>Vrijdag: 9:00 - 18:00</li>
+                        <li>Zaterdag: 9:00 - 15:00</li>
+                        <li>Zondag: Gesloten</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Volg Ons</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="https://booking.optios.net/13127/activities" class="btn booking-btn">Online Boeken</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Caro's Nails and Beauty - Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html> 

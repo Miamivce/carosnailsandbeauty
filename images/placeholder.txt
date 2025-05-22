@@ -1,0 +1,15 @@
+PLACEHOLDER IMAGES NEEDED:
+
+Please add the following images to this folder:
+
+1. caro.jpg - A professional photo of Caro (ideally a headshot or waist-up portrait)
+2. hero-pattern.png - A subtle background pattern for the hero section
+3. service-placeholder.jpg - For service category thumbnails
+4. nails-placeholder-1.jpg - For nail gallery example 1
+5. nails-placeholder-2.jpg - For nail gallery example 2
+6. nails-placeholder-3.jpg - For nail gallery example 3
+7. nails-placeholder-4.jpg - For nail gallery example 4
+
+Make sure all images are optimized for web (image size less than 500KB each) for faster loading.
+
+You can replace the "placeholder.txt" file once all images are added. 

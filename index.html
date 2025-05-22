@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro's Nails and Beauty | Brasschaat</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        .salon-gallery {
+            margin: 3rem 0;
+        }
+        
+        .salon-gallery h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item img:hover {
+            transform: scale(1.02);
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-item img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Caro's Nails and Beauty</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/over-caro.html">Over Caro</a></li>
+                    <li class="dropdown">
+                        <a href="pages/aanbod.html">Aanbod <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="pages/gelaat-lichaam.html">Gelaat & Lichaam</a></li>
+                            <li><a href="pages/laserontharing.html">Definitieve Laserontharing</a></li>
+                            <li><a href="pages/nagels.html">Nagels</a></li>
+                            <li><a href="pages/make-up.html">Make Up</a></li>
+                            <li><a href="pages/bruidspaketten.html">Bruidspaketten</a></li>
+                            <li><a href="pages/adipologie.html">Body Contouring: Adipologie</a></li>
+                            <li><a href="pages/spraytan.html">Spraytan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/promoties.html">Promoties</a></li>
+                    <li><a href="pages/info-behandelingen.html">Info Behandelingen</a></li>
+                    <li><a href="pages/referenties.html">Referenties</a></li>
+                    <li><a href="pages/covid-19.html">COVID-19</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welkom bij Caro's Nails & Beauty</h2>
+                <p>Uw schoonheidssalon in het hart van Brasschaat</p>
+                <a href="https://booking.optios.net/13127/activities" class="btn booking-btn">Online Boeken</a>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-content">
+                    <img src="images/Home1.jpg" alt="Caro's Nails & Beauty Salon" class="intro-image">
+                    <div class="intro-text">
+                        <h2>Welkom bij Caro's Nails & Beauty</h2>
+                        <p>Bij schoonheidssalon Caro's Nails & Beauty Brasschaat bent u aan het juiste adres als het gaat over beauty, verzorging en laserontharing. Het salon is opgestart vanuit onze passie voor estetika.</p>
+                        <p>Alle producten en materialen voor de behandelingen zijn zorgvuldig getest om u de beste kwaliteit te kunnen garanderen. We stellen kwaliteit, gezondheid en professionaliteit voorop, mede dankzij de regelmatige bijscholingen in nieuwe technieken en perfectionering van bestaande skills. Alle toestellen waarmee we werken zijn CE gecertifieerd en voldoen aan de strengste normen!</p>
+                        <p>Bekijk zeker ons aanbod en aarzel niet om ons te contacteren.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="salon-gallery">
+            <div class="container">
+                <h2>Ons Salon</h2>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="images/Salon.jpg" alt="Caro's Nails and Beauty Salon Interieur">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Salon2.jpg" alt="Caro's Nails and Beauty Behandelruimte">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Onze Specialiteiten</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-spa"></i>
+                        <h3>Gelaat & Lichaam</h3>
+                        <p>Ontspannende en verkwikkende behandelingen</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Laserontharing</h3>
+                        <p>Definitieve ontharing met professionele technologie</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <h3>Nagels</h3>
+                        <p>Perfecte manicures en pedicures</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-magic"></i>
+                        <h3>Make-up</h3>
+                        <p>Voor speciale gelegenheden of dagelijks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promotion">
+            <div class="container">
+                <div class="promo-content">
+                    <h2>Speciale Aanbieding</h2>
+                    <p>Boek nu en ontvang 15% korting op uw eerste behandeling!</p>
+                    <a href="pages/promoties.html" class="btn">Meer Informatie</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Wat Onze Klanten Zeggen</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"Fantastische service en resultaten! Ik kom zeker terug."</p>
+                        <div class="client">— Marie V.</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Mijn nagels zijn nog nooit zo mooi geweest. Bedankt Caro!"</p>
+                        <div class="client">— Sofie D.</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Professioneel, vriendelijk en altijd up-to-date met de nieuwste technieken."</p>
+                        <div class="client">— Lisa B.</div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-links">
+            <div class="container">
+                <h2>Ontdek Ons Aanbod</h2>
+                <div class="service-links-grid">
+                    <div class="service-link-card">
+                        <img src="images/Nagels.jpg" alt="Nagels" class="service-link-image">
+                        <a href="pages/nagels.html" class="service-link-btn">NAGELS</a>
+                    </div>
+                    <div class="service-link-card">
+                        <img src="images/Beauty.jpg" alt="Beauty Behandelingen" class="service-link-image">
+                        <a href="pages/gelaat-lichaam.html" class="service-link-btn">BEAUTY BEHANDELINGEN</a>
+                    </div>
+                    <div class="service-link-card">
+                        <img src="images/Laser.jpg" alt="Definitieve Laserontharingen" class="service-link-image">
+                        <a href="pages/laserontharing.html" class="service-link-btn">DEFINITIEVE LASERONTHARINGEN</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Caro's Nails and Beauty</h3>
+                    <address>
+                        Mishagen 132<br>
+                        2930 Brasschaat<br>
+                        België
+                    </address>
+                    <p>GSM: <a href="tel:+32475984574">+32 475 98 45 74</a></p>
+                    <p>E-mail: <a href="mailto:info@carosbeauty.be">info@carosbeauty.be</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Openingsuren</h3>
+                    <ul>
+                        <li>Maandag: Op afspraak</li>
+                        <li>Dinsdag: 9:00 - 18:00</li>
+                        <li>Woensdag: 9:00 - 18:00</li>
+                        <li>Donderdag: 9:00 - 20:00</li>
+                        <li>Vrijdag: 9:00 - 18:00</li>
+                        <li>Zaterdag: 9:00 - 15:00</li>
+                        <li>Zondag: Gesloten</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Volg Ons</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="https://booking.optios.net/13127/activities" class="btn booking-btn">Online Boeken</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Caro's Nails and Beauty - Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html> 

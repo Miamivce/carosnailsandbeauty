@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Behandelingen | Caro's Nails and Beauty</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .accordion-item {
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #fff;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .accordion-header:hover {
+            background-color: var(--primary-color);
+        }
+        
+        .accordion-header h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        
+        .accordion-content {
+            padding: 0 1rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background-color: #fff;
+        }
+        
+        .accordion-content.active {
+            padding: 1rem;
+            max-height: 1000px;
+            transition: max-height 0.5s ease-in, padding 0.3s ease;
+        }
+        
+        .accordion-header i {
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-header.active i {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Caro's Nails and Beauty</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="over-caro.html">Over Caro</a></li>
+                    <li class="dropdown">
+                        <a href="aanbod.html">Aanbod <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="gelaat-lichaam.html">Gelaat & Lichaam</a></li>
+                            <li><a href="laserontharing.html">Definitieve Laserontharing</a></li>
+                            <li><a href="nagels.html">Nagels</a></li>
+                            <li><a href="make-up.html">Make Up</a></li>
+                            <li><a href="bruidspaketten.html">Bruidspaketten</a></li>
+                            <li><a href="adipologie.html">Body Contouring: Adipologie</a></li>
+                            <li><a href="spraytan.html">Spraytan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="promoties.html">Promoties</a></li>
+                    <li><a href="info-behandelingen.html" class="active">Info Behandelingen</a></li>
+                    <li><a href="referenties.html">Referenties</a></li>
+                    <li><a href="covid-19.html">COVID-19</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Info Behandelingen</h1>
+            </div>
+        </section>
+
+        <section class="service-detail">
+            <div class="container">
+                <div class="service-intro">
+                    <h2>Informatie over onze behandelingen</h2>
+                    <p>Op deze pagina vindt u uitgebreide informatie over onze behandelingen, praktische tips voor voor- en nazorg, en antwoorden op veelgestelde vragen. Wij geloven dat een goede voorbereiding en juiste nazorg essentieel zijn voor het beste resultaat van elke behandeling.</p>
+                    <p>Heeft u na het lezen van deze informatie nog vragen? Aarzel dan niet om contact met ons op te nemen.</p>
+                </div>
+
+                <div class="service-faq">
+                    <h2>Algemene Informatie</h2>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Afspraak maken en annuleringsbeleid</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Afspraken kunt u eenvoudig online maken via ons boekingssysteem, telefonisch of via e-mail. Wij verzoeken u vriendelijk om uw afspraak minimaal 24 uur van tevoren te annuleren of te wijzigen indien nodig. Bij annuleringen binnen 24 uur kunnen wij genoodzaakt zijn de gereserveerde tijd in rekening te brengen.</p>
+                            <p>Wij streven ernaar op tijd te beginnen met uw behandeling. Indien u te laat komt, kan dit de duur van uw behandeling verkorten, omdat wij ook rekening willen houden met onze volgende klanten.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Betaalmogelijkheden</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>U kunt bij ons op verschillende manieren betalen:</p>
+                            <ul>
+                                <li>Contant</li>
+                                <li>Bancontact/Maestro</li>
+                                <li>Creditcard (Visa, Mastercard)</li>
+                                <li>Overschrijving (alleen voor grotere pakketten en vooraf overeengekomen)</li>
+                            </ul>
+                            <p>Wij accepteren helaas geen cheques of buitenlandse valuta.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Gezondheidsvoorwaarden en contra-indicaties</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Voor sommige behandelingen gelden specifieke gezondheidsvoorwaarden. In de volgende gevallen kunnen bepaalde behandelingen (tijdelijk) niet uitgevoerd worden:</p>
+                            <ul>
+                                <li>Zwangerschap (vooral bij laserontharing, bepaalde gelaatsbehandelingen, adipologie)</li>
+                                <li>Recent gebruik van antibiotica (bij laserontharing)</li>
+                                <li>Huidaandoeningen in het te behandelen gebied</li>
+                                <li>Bepaalde medicaties (bijv. Roaccutane bij gelaatsbehandelingen)</li>
+                                <li>Recente zonnebrand of zongebruinde huid (bij laserontharing)</li>
+                                <li>Diabetes of ernstige vaataandoeningen (bij bepaalde lichaamsbehandelingen)</li>
+                            </ul>
+                            <p>Wij vragen u om ons altijd te informeren over relevante medische aandoeningen, medicijngebruik of allergieën. Bij twijfel zullen wij u vragen om toestemming van uw arts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-options">
+                    <h2>Voor- en Nazorg per Behandeling</h2>
+                    
+                    <div class="service-option">
+                        <div class="option-header">
+                            <h3>Gelaatsbehandelingen</h3>
+                        </div>
+                        <div class="option-content">
+                            <h4>Voorbereiding:</h4>
+                            <ul>
+                                <li>Kom bij voorkeur zonder make-up</li>
+                                <li>Mannen wordt aangeraden 24 uur voor de behandeling niet te scheren</li>
+                                <li>Vermijd 24-48 uur voor de behandeling: peelings, scrubs, retinol</li>
+                                <li>Vermijd direct zonlicht/zonnebank 24-48 uur voorafgaand</li>
+                            </ul>
+                            
+                            <h4>Nazorg:</h4>
+                            <ul>
+                                <li>Vermijd direct zonlicht gedurende 24-48 uur na een intensieve behandeling</li>
+                                <li>Gebruik altijd een SPF na een gelaatsbehandeling</li>
+                                <li>Drink veel water om het detox-effect te bevorderen</li>
+                                <li>Gebruik 24 uur na de behandeling geen make-up (tenzij anders aangegeven)</li>
+                                <li>Vermijd sauna, zwembad en intensief sporten gedurende 24 uur</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-option">
+                        <div class="option-header">
+                            <h3>Laserontharing</h3>
+                        </div>
+                        <div class="option-content">
+                            <h4>Voorbereiding:</h4>
+                            <ul>
+                                <li>Scheren van het te behandelen gebied 24 uur vooraf (niet waxen, epileren of harsen)</li>
+                                <li>Geen zelfbruiner of bruiningscrème gebruiken gedurende 2 weken vooraf</li>
+                                <li>Vermijd zonnen en zonnebank gedurende 4 weken vooraf</li>
+                                <li>Gebruik geen parfum, deodorant of make-up op het te behandelen gebied</li>
+                            </ul>
+                            
+                            <h4>Nazorg:</h4>
+                            <ul>
+                                <li>Vermijd direct zonlicht gedurende minstens 2 weken</li>
+                                <li>Gebruik SPF 50 op behandelde gebieden bij blootstelling aan de zon</li>
+                                <li>Vermijd sauna, zwembad, stoombad gedurende 48 uur</li>
+                                <li>Niet krabben aan de behandelde huid</li>
+                                <li>Gebruik koele kompressen bij eventuele irritatie</li>
+                                <li>Vermijd intensieve lichaamsbeweging gedurende 24 uur</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-option">
+                        <div class="option-header">
+                            <h3>Nagels (Gellak & Acryl)</h3>
+                        </div>
+                        <div class="option-content">
+                            <h4>Voorbereiding:</h4>
+                            <ul>
+                                <li>Verwijder oude nagellak voor de afspraak</li>
+                                <li>Geen handcrème gebruiken op de dag van behandeling</li>
+                                <li>Nagels niet knippen of vijlen; wij bepalen de ideale lengte en vorm</li>
+                                <li>Meld eventuele nagelproblemen vooraf (schimmel, etc.)</li>
+                            </ul>
+                            
+                            <h4>Nazorg:</h4>
+                            <ul>
+                                <li>Vermijd gedurende 24 uur contact met water (bij nieuwe acrylnagels)</li>
+                                <li>Gebruik handschoenen bij huishoudelijk werk en tuinieren</li>
+                                <li>Gebruik nagel- en nagelriemolie voor gezonde natuurlijke nagels</li>
+                                <li>Gebruik nagels nooit als gereedschap voor openen van blikjes, etc.</li>
+                                <li>Laat beschadigde nagels professioneel repareren, niet zelf verwijderen</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-option">
+                        <div class="option-header">
+                            <h3>Massage & Lichaambehandelingen</h3>
+                        </div>
+                        <div class="option-content">
+                            <h4>Voorbereiding:</h4>
+                            <ul>
+                                <li>Douche voordat u naar uw afspraak komt</li>
+                                <li>Eet geen zware maaltijd 1-2 uur voor de massage</li>
+                                <li>Vermijd alcohol 24 uur vooraf</li>
+                                <li>Informeer de therapeut over pijnlijke gebieden of specifieke wensen</li>
+                            </ul>
+                            
+                            <h4>Nazorg:</h4>
+                            <ul>
+                                <li>Drink veel water na de behandeling om afvalstoffen af te voeren</li>
+                                <li>Vermijd zware fysieke inspanning direct na de behandeling</li>
+                                <li>Rust voldoende om het lichaam te laten herstellen</li>
+                                <li>Vermijd alcohol gedurende 24 uur na de behandeling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="service-option">
+                        <div class="option-header">
+                            <h3>Spraytan</h3>
+                        </div>
+                        <div class="option-content">
+                            <h4>Voorbereiding:</h4>
+                            <ul>
+                                <li>Exfolieer uw hele lichaam 24 uur vooraf</li>
+                                <li>Scheren/waxen minimaal 24 uur voor de behandeling</li>
+                                <li>Geen lotions, oliën, parfum of deodorant gebruiken op de dag van behandeling</li>
+                                <li>Draag donkere, losse kleding en slippers naar uw afspraak</li>
+                                <li>Verwijder sieraden en horloges voor de behandeling</li>
+                            </ul>
+                            
+                            <h4>Nazorg:</h4>
+                            <ul>
+                                <li>Vermijd water, zweten en wrijving gedurende 8-12 uur na de behandeling</li>
+                                <li>Douche eerst koel om overtollig bronzer te verwijderen</li>
+                                <li>Hydrateer dagelijks om de bruine kleur langer te behouden</li>
+                                <li>Dep uw huid droog na het douchen in plaats van wrijven</li>
+                                <li>Vermijd chloorwater (zwembaden) en langdurige baden</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-faq">
+                    <h2>Behandelingsspecifieke FAQ</h2>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Hoe lang duurt het voor een gellak behandeling?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Een gellak behandeling duurt ongeveer 45-60 minuten, afhankelijk van de staat van uw nagels en eventuele nail art. Het grote voordeel van gellak is dat het direct volledig droog is na uitharding onder de UV/LED lamp, zodat u meteen naar huis kunt zonder zorgen over beschadigingen.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Kan ik make-up dragen na een gelaatsbehandeling?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Na de meeste basis gelaatsbehandelingen kunt u na enkele uren weer make-up dragen. Bij intensievere behandelingen zoals peelings of microdermabrasie adviseren wij om 24 uur geen make-up te dragen om de huid volledig te laten herstellen. Uw huidspecialist zal u specifiek advies geven na uw behandeling.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Mag ik zonnen tussen laserontharing sessies?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Zonnen tussen laserontharing sessies wordt sterk afgeraden. Voor de meest effectieve en veilige behandeling moet de huid zijn natuurlijke kleur hebben. UV-blootstelling verhoogt het risico op bijwerkingen zoals hyperpigmentatie of huidverbranding tijdens de laserbehandeling. We adviseren om minstens 2 weken voor en 2 weken na elke sessie directe zon te vermijden en altijd SPF 50 te gebruiken op behandelde gebieden bij buitenactiviteiten.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Wat is het verschil tussen Gellak en Acrylnagels?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Gellak is een kleurgelcoating die op de natuurlijke nagel wordt aangebracht en onder een UV/LED-lamp wordt uitgehard. Het geeft een duurzame, glanzende afwerking die 2-3 weken houdt zonder te chippen. Acrylnagels zijn kunstnagels gemaakt van een combinatie van een vloeibare monomeer en een poederpolymeer die samen uitharden tot een sterke kunstnagel die over uw natuurlijke nagel wordt geplaatst. Acrylnagels zijn steviger, kunnen worden verlengd en houden 3-4 weken voordat een bijwerking nodig is. Ze zijn ideaal voor mensen die lange, sterke nagels willen die tegen een stootje kunnen.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Hoe vaak moet ik een gelaatsbehandeling nemen voor het beste resultaat?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Voor optimale resultaten adviseren wij een reguliere gelaatsbehandeling elke 4-6 weken, omdat dit de gemiddelde celvernieuwingscyclus van de huid is. Afhankelijk van uw huidconditie en -type kan dit variëren. Bij specifieke huidproblemen zoals acne of pigmentatie kunnen frequentere behandelingen nodig zijn, vaak in combinatie met een thuisverzorgingsroutine die wij voor u samenstellen. Tijdens uw eerste consult maken wij een persoonlijk behandelplan dat past bij uw huidbehoeften en -doelen.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-options">
+                    <h2>Huisregels</h2>
+                    <div class="option-content">
+                        <ul>
+                            <li><strong>Respect voor privacy</strong> - Wij vragen u om tijdens uw bezoek rekening te houden met de privacy en rust van andere klanten.</li>
+                            <li><strong>Mobiele telefoons</strong> - Gelieve uw telefoon op stil te zetten tijdens behandelingen.</li>
+                            <li><strong>Kinderen</strong> - Kinderen zijn welkom in onze salon, maar moeten onder toezicht van een ouder/verzorger blijven.</li>
+                            <li><strong>Eigendommen</strong> - Wij zijn niet aansprakelijk voor verlies of diefstal van persoonlijke eigendommen. Waardevolle spullen kunt u bij ons in bewaring geven tijdens uw behandeling.</li>
+                            <li><strong>Gezondheid</strong> - Als u ziek bent met verkoudheid, griep of andere besmettelijke ziekten, verzoeken wij u uw afspraak te verzetten.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-cta">
+                    <h2>Nog vragen?</h2>
+                    <p>Heeft u na het lezen van deze informatie nog specifieke vragen over onze behandelingen? Neem gerust contact met ons op.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn">Neem Contact Op</a>
+                        <a href="https://booking.optios.net/13127/activities" class="btn booking-btn">Online Boeken</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Caro's Nails and Beauty</h3>
+                    <address>
+                        Mishagen 132<br>
+                        2930 Brasschaat<br>
+                        België
+                    </address>
+                    <p>GSM: <a href="tel:+32475984574">+32 475 98 45 74</a></p>
+                    <p>E-mail: <a href="mailto:info@carosbeauty.be">info@carosbeauty.be</a></p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Openingsuren</h3>
+                    <ul>
+                        <li>Maandag: Op afspraak</li>
+                        <li>Dinsdag: 9:00 - 18:00</li>
+                        <li>Woensdag: 9:00 - 18:00</li>
+                        <li>Donderdag: 9:00 - 20:00</li>
+                        <li>Vrijdag: 9:00 - 18:00</li>
+                        <li>Zaterdag: 9:00 - 15:00</li>
+                        <li>Zondag: Gesloten</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Volg Ons</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="https://booking.optios.net/13127/activities" class="btn booking-btn">Online Boeken</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Caro's Nails and Beauty - Alle rechten voorbehouden</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all accordion headers
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            // Add click event to each header
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    // Toggle active class on the header
+                    this.classList.toggle('active');
+                    
+                    // Get the content panel
+                    const content = this.nextElementSibling;
+                    
+                    // Toggle active class on the content
+                    content.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
